@@ -1,6 +1,4 @@
 # first-Assignment
-
-## Ödev 1 
 Kotlin Alıştırmaları
 
 Code Username Validation 
