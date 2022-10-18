@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#E6E6FA"
+    android:layout_marginHorizontal="24dp"
+    tools:context=".noteDetailsFragment.NotesDetailFragment">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp">
+        <ImageButton
+            android:id="@+id/backArrow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_arrow_back"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_arrow_back"
+            app:backgroundTint="@null"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/NoteDetailHeaderCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:textStyle="bold"
+            android:backgroundTint="#E6E6FA"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true"
+            android:layout_margin="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/NoteDetailHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                tools:text="Note Title" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#F5F5DC"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayout" 
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/NoteBodyCardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:textStyle="bold"
+            android:backgroundTint="#E6E6FA"
+            app:cardCornerRadius="12dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <TextView
+                android:id="@+id/NoteBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                tools:text=" gervkjbdfvbldbvjbvljvblebbvjbevfbjeobvjebvebbvjevbeovbjebvevbejvbevevbg"
+                app:layout_constraintTop_toBottomOf="@id/NoteDetailHeader"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
